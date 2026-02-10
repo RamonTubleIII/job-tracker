@@ -63,11 +63,9 @@ interface Job {
 * Domain-neutral job names for reuse
 * ISO timestamps for date and time
 
-## 🔄 Behavior Notes
-- updatedAt is refreshed automatically when status changes
-
-##🎯 Design Decisions
-- Material UI used for base components 
+## 🎯 Design Decisions
+- src/pages is used to allow for addition of more pages in the future and easy addition to routes
+- Material UI used for base components  
 
 ## ⚖️ Tradeoffs
 - No backend or API layer included (mock JSON only)
@@ -76,3 +74,5 @@ interface Job {
 ## 🚀 Possible Future Improvements
 - Could migrate data to a NoSQL based DB by connecting to a 'cloud-backend' like Firebase
 - Enable multi-device data persistence
+- Add more status filters 
+- Create job filter
