@@ -1,4 +1,4 @@
-import { ToggleButton, ToggleButtonGroup, Box } from '@mui/material';
+import { Tabs, Tab, Box } from '@mui/material';
 import { type JobStatus } from '../types/job';
 
 interface FilterProps {
@@ -8,19 +8,19 @@ interface FilterProps {
 
 export const JobFilters = ({ currentFilter, onFilterChange }: FilterProps) => {
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'flex-start' }}>
-      <ToggleButtonGroup
-        value={currentFilter}
-        exclusive
-        onChange={(_, val) => val && onFilterChange(val)}
-        color="primary"
-        aria-label="Filter jobs by status"
+    <Box>
+      <Tabs 
+        value={currentFilter} 
+        onChange={(_, val) => onFilterChange(val)}
+        textColor="primary"
+        indicatorColor="primary"
+        sx={{fontFamily: "Roboto"}}
       >
-        <ToggleButton value="All">All Jobs</ToggleButton>
-        <ToggleButton value="Pending">Pending</ToggleButton>
-        <ToggleButton value="In Progress">In Progress</ToggleButton>
-        <ToggleButton value="Completed">Completed</ToggleButton>
-      </ToggleButtonGroup>
+        <Tab label="All Jobs" value="All" sx={{ fontWeight: 600 }} />
+        <Tab label="Pending" value="Pending" sx={{ fontWeight: 600 }} />
+        <Tab label="In Progress" value="In Progress" sx={{ fontWeight: 600 }} />
+        <Tab label="Completed" value="Completed" sx={{ fontWeight: 600 }} />
+      </Tabs>
     </Box>
   );
 };
