@@ -1,0 +1,44 @@
+[
+  {
+    "id": "JOB-001",
+    "jobName": "Website Redesign Phase 2",
+    "clientName": "Example Group",
+    "status": "In Progress",
+    "priority": "High",
+    "createdAt": "2026-01-12T09:30:00Z",
+    "lastUpdatedAt": "2026-02-08T14:10:00Z"
+  },
+  {
+    "id": "JOB-002",
+    "jobName": "Mobile App Checkout Fix",
+    "clientName": "Sample Solutions Inc.",
+    "status": "Pending",
+    "priority": "Medium",
+    "createdAt": "2026-02-01T11:00:00Z",
+    "lastUpdatedAt": "2026-02-01T11:00:00Z"
+  },
+  {
+    "id": "JOB-003",
+    "jobName": "Inventory Sync Integration",
+    "clientName": "ABC Retail Group",
+    "status": "Completed",
+    "priority": "Low",
+    "createdAt": "2025-12-20T08:15:00Z",
+    "lastUpdatedAt": "2026-01-05T16:45:00Z"
+  },
+  {
+    "id": "JOB-004",
+    "jobName": "Modernize Legacy Codebase",
+    "clientName": "Lorem Ipsum Co.",
+    "status": "Completed",
+    "priority": "Low",
+    "createdAt": "2025-12-22T04:15:00Z",
+    "lastUpdatedAt": "2026-01-035T13:45:00Z"
+  }
+]
+
+
+
+
+
+
